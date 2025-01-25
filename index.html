@@ -152,16 +152,15 @@
                     <input type="number" name="age">
                 </div>
                 <br>
-                <div class="form-row">
+                <div>
                     <label>Gender:</label>
                     <select name="gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select>
-                </div>
-                <div>
+
                     <label>Email Address:</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" required placeholder="Enter your email address">
                 </div>
                 <br>
                 <div class="form-row">
@@ -259,10 +258,14 @@
             <div class="login-container">
                 <form class="login-form">
                     <h2>Login Form</h2>
-                    <input type="text" placeholder="Username" required>
+                    <input class="ff" type="text" placeholder="Username" required>
                     <br>
-                    <input type="password" placeholder="Password" required>
+                    <input class="ff" type="password" placeholder="Password" required>
                     <br>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me" />
+                        <label for="remember-me">Remember me</label>
+                    </div>
                     <button type="submit" class="blue">Login</button>
                 </form>
             </div>
@@ -336,7 +339,8 @@
 
     <!-- Question 7 -->
     <section class="main-section">
-        <h2 class="section-heading">Question 7: Animated Object // Will only work when it is scrolled for the 1st time or refresh and then scroll back again
+        <h2 class="section-heading">Question 7: Animated Object // Will only work when it is scrolled for the 1st time
+            or refresh and then scroll back again
         </h2>
         <div class="section-content">
             <div class="animated-object"></div>
