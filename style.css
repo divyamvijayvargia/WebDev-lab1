@@ -1,0 +1,326 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Main section styles */
+.main-section {
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.section-heading {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.section-content {
+    padding: 20px;
+}
+
+/* Question 1 Styles */
+.about-victoria {
+    background-color: #584f3a;
+    color: white;
+    padding: 20px;
+}
+
+.about-victoria h1 {
+    color: #a8c6df;
+    margin-bottom: 20px;
+}
+
+.about-victoria h2 {
+    color: #a8c6df;
+    margin-bottom: 20px;
+}
+
+.classes-list,
+.movies-list {
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+.moods-container {
+    display: flex;
+    gap: 20px;
+}
+
+.mood-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Question 2 Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    background-color: white;
+}
+
+td ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.nested-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nested-table th,
+.nested-table td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+
+/* Question 3 Styles */
+.application-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: inline-block;
+    width: 100px;
+}
+
+/* Question 4 Styles */
+.main {
+    display: flex;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+    color: rgb(72, 48, 48);
+    text-align: left;
+    font-size: larger;
+}
+
+.head h1 {
+    font-size: 36px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.sidebar {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sideit {
+    background-color: #CDB599;
+    color: green;
+    padding: 5px 10px;
+    border: 2px solid rgb(20, 23, 20);
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.content {
+    flex: 1;
+    position: relative;
+}
+
+
+.footer {
+    margin-top: 20px;
+    background-color: #5b3b17;
+    text-align: center;
+    padding: 10px;
+    color: rgb(251, 251, 251);
+    font-weight: bold;
+}
+
+.footer a {
+    color: green;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.para {
+    display: flex;
+    font-size: large;
+    letter-spacing: 1px;
+
+}
+
+.content img {
+    margin-top: 80px;
+    width: 250px;
+    height: 250px;
+}
+
+/* Question 5 Styles */
+.login-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('/5.jpg');
+    background-size: cover;
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.blue {
+    color: white;
+    background-color: rgb(56, 147, 168);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Question 6 Styles */
+.column-container {
+    column-count: 3;
+    column-gap: 40px;
+    padding: 20px;
+    column-rule: 4px dotted black;
+}
+
+.dotted {
+    column-rule: 2px dotted black;
+}
+
+.section-content h1 {
+    text-align: center;
+}
+
+/* Question 7 Styles */
+.animated-object {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+    animation: moveAndTransform 3s ease-in-out 5s;
+}
+
+@keyframes moveAndTransform {
+    0% {
+        transform: translateX(0);
+        border-radius: 50%;
+        background-color: pink;
+    }
+
+    100% {
+        transform: translateX(200px);
+        border-radius: 0;
+        background-color: blue;
+    }
+}
+
+.animated-object:hover {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Question 8 Styles */
+.simple-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.red {
+    color: red;
+}
+
+.pding {
+    padding: 10px;
+}

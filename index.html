@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Application - Practice Problems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Question 1 -->
+    <section class="main-section">
+        <h2 class="section-heading">Question 1: About Victoria Web Page</h2>
+        <div class="section-content">
+            <div class="about-victoria">
+                <h1>About Victoria Kirst</h1>
+                <p>My name is Victoria and I am <span class="yellow">jolly</span>, <span class="yellow">clumsy</span>,
+                    and <span class="yellow">four-eyed</span>.</p>
+                <br>
+                <hr style="color: white;">
+                <br>
+                <h2>My Classes This Quarter</h2>
+                <ul>
+                    <li>CSE 451 - Operating Systems</li>
+                    <li>CSE 471 - Computer Design and Organization</li>
+                    <li>PHYS 121 - Physics: Mechanics</li>
+                    <li>CSE 498 - Research w/ Prof. Luis Ceze</li>
+                </ul>
+
+                <h2>My Favorite Movies</h2>
+                <p>(I actually don't watch too many movies, so...here goes!)</p>
+                <ol class="pding">
+                    <li>The last 30 minutes of Forrest Gump (<span class="red">IMDB</span>)</li>
+                    <li>Star Trek Episode V with Zazu (<span class="red">IMDB</span>)</li>
+                    <li>Fight Club (not really, but I've seen like 3 movies total) (<span class="red">IMDB</span>)</li>
+                </ol>
+
+                <h2>My Moods</h2>
+                <div class="moods-container">
+                    Happy:<img src="/bunny.jpg" alt="Happy mood" class="mood-image">
+                    Sad:<img src="/dog.jpg" alt="Sad mood" class="mood-image">
+                </div>
+                <h2>Fun Facts About My Neighbors</h2>
+                <div>
+                    <ul>
+                        <li>Sue Smith: Effervescent is a word that describes her.</li>
+                        <li>Bill Thompson: Loves playing Yu-Gi-Oh.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question 2 -->
+    <section class="main-section">
+        <h2 class="section-heading">Question 2: Complex Table Design</h2>
+        <div class="section-content">
+            <table>
+                <tr>
+                    <th>Header column 1</th>
+                    <th>Header column 2</th>
+                    <th>Header column 3</th>
+                    <th>Header column 4</th>
+                </tr>
+                <tr>
+                    <td>Row 2 - Item 1</td>
+                    <td>Row 2 - Item 2</td>
+                    <td rowspan="2">
+                        Row 2: Nested Table 1
+                        <table class="nested-table">
+                            <tr>
+                                <th>Row 1 Header</th>
+                                <td>item</td>
+                            </tr>
+                            <tr>
+                                <th>Row 2 Header</th>
+                                <td>item</td>
+                            </tr>
+                            <tr>
+                                <th>Row 3 Header</th>
+                                <td>item</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        Row 2 - Item 4<br>
+                        A second line<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Row 3: Nested Table 2
+                        <table class="nested-table">
+                            <tr>
+                                <th>Row 1 Header</th>
+                                <td>item</td>
+                            </tr>
+                            <tr>
+                                <th>Row 2 Header</th>
+                                <td>item</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>VB.Net</li>
+                            <li>Csharp</li>
+                            <li>Asp.Net</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <table class="nested-table">
+                            <td rowspan="2">
+                                <img src="css.jpg" alt="">
+                            </td>
+
+                        </table>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Row 4 - Item 1</td>
+                    <td>Row 4 - Item 2</td>
+                    <td>Row 4 - Item 3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4">Row 5 - Last row of outer table</td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <!-- Question 3 -->
+    <section class="main-section">
+        <h2 class="section-heading">Question 3: Application Form</h2>
+        <div class="section-content">
+            <form class="application-form">
+                <h2>Application Form</h2>
+                <div>
+                    <label>First Name:</label>
+                    <input type="text" name="firstName">
+                    <label>Last Name:</label>
+                    <input type="text" name="lastName">
+                </div>
+                <br>
+                <div>
+                    <label>Date of birth:</label>
+                    <input type="date" name="dob">
+                    <label>Age:</label>
+                    <input type="number" name="age">
+                </div>
+                <br>
+                <div class="form-row">
+                    <label>Gender:</label>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Email Address:</label>
+                    <input type="email" name="email">
+                </div>
+                <br>
+                <div class="form-row">
+                    <label>Position:</label>
+                    <input type="radio" name="position" value="junior"> Junior Developer
+                    <input type="radio" name="position" value="mid"> Mid-level Developer
+                    <input type="radio" name="position" value="senior"> Senior Developer
+                </div>
+                <div>
+                    <label>Programming Languages:</label>
+                    <input type="checkbox" name="java"> Java
+                    <input type="checkbox" name="javascript"> JavaScript
+                    <input type="checkbox" name="python"> Python
+                </div>
+                <br>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" name="password">
+
+                    <label>Confirm Password:</label>
+                    <input type="password" name="confirmPassword">
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Question 4 -->
+    <section class="main-section">
+        <h2 class="section-heading">Question 4: Zoo Website</h2>
+        <div class="section-content">
+            <div class="container">
+                <header class="head">
+                    <h1>The Zoo</h1>
+                    <p>Come and meet the animals!</p>
+                </header>
+
+                <div class="main">
+                    <nav class="sidebar">
+
+                        <div class="sideit">Information</div>
+                        <div class="sideit">Llamas</div>
+                        <div class="sideit">Bears</div>
+                        <div class="sideit">Tigers</div>
+                        <div class="sideit">Penguins</div>
+                        <div class="sideit">Guinea Pigs</div>
+
+                    </nav>
+
+                    <section class="content">
+                        <div class="para">
+                            <div>
+                                <h2>Information:</h2>
+                                <p>The Zoo is a free, family-focused zoo which has a small range of exotic and domestic
+                                    animals and is recognised as one of the most progressive zoos in the world. There is
+                                    lots to see and do all year, including events, eye-to-eye encounters,
+                                    behind-the-scenes tours and more. Zoo experiences motivate children to care for the
+                                    environment and this is especially important as they will be the caretakers of our
+                                    precious biodiversity in the future.</p>
+
+                                <p>The Zoo was started in 1965 by two very dedicated conservationists, and since that
+                                    time we have been creating animal exhibits that not only emulate the animals'
+                                    natural habitats but also provide spectators and visitors with excellent views of
+                                    both the outdoor areas and the sleeping quarters.</p>
+                                <p><strong>Hours:</strong> We are open 9am to 5pm every day. We are open all public
+                                    holidays including Christmas Day.</p>
+                                <p><strong>Facilities:</strong> Wheelchair and pushchair access, playground, sun shade,
+                                    toilets and picnic tables.</p>
+                                <p>The Zoo is a member of the <a href="#" target="_blank"><span
+                                            class="red">International Zoo Educators Association</span>.</a></p>
+                            </div>
+                            <div id="tigge">
+                                <img id="tigg" src="tiger.jpg" alt="Tiger in the zoo">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <footer class="footer">
+                    <p>Call us on 01 234 5678 or <a href="mailto:info@zoo.com">email us</a></p>
+                </footer>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Question 5 -->
+    <section class="main-section">
+        <h2 class="section-heading">Question 5: Login Form with Background</h2>
+        <div class="section-content">
+            <div class="login-container">
+                <form class="login-form">
+                    <h2>Login Form</h2>
+                    <input type="text" placeholder="Username" required>
+                    <br>
+                    <input type="password" placeholder="Password" required>
+                    <br>
+                    <button type="submit" class="blue">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question 6 -->
+    <section class="main-section">
+        <h2 class="section-heading">Question 6: Column Layout</h2>
+        <div class="section-content">
+            <h1>The Column-rule-style Property</h1>
+            <div class="column-container">
+                <p class="dotted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat repudiandae natus
+                    dolore iste
+                    incidunt pariatur excepturi maxime nulla neque aperiam commodi sed eaque quos sapiente sit quibusdam
+                    ut, deleniti ad. Nisi provident numquam enim atque cupiditate cum aliquam optio commodi molestias
+                    eos quis corporis sint voluptas cumque, repellat quod laboriosam neque, quas quo eum culpa
+                    consequatur recusandae facere? Modi eos assumenda voluptatibus, aperiam consectetur iste sapiente
+                    doloremque officia facere neque accusantium nostrum accusamus et doloribus pariatur aspernatur ipsum
+                    corporis odit voluptas, laboriosam optio officiis? Nam quaerat, deserunt iste rerum eaque tenetur
+                    nisi quas. Deleniti delectus quidem odio recusandae nemo ipsa quo ad repudiandae voluptatum ducimus,
+                    culpa nobis repellat nihil quos ipsum, numquam eligendi officiis tempora harum labore consectetur
+                    obcaecati sit error dolores? Aliquam dignissimos minima veniam repellat libero error, corporis eum
+                    rerum ipsum laudantium at maxime dolor non quibusdam! Sunt, dolores magnam repellendus corrupti sed,
+                    ducimus explicabo dolor amet esse temporibus voluptatibus, cupiditate maiores saepe illum ipsa
+                    delectus molestiae sequi tenetur quos. Officia optio quos doloremque vero natus non vitae, dicta
+                    quidem? Impedit consequuntur consectetur adipisci suscipit eos dicta blanditiis, temporibus fugiat
+                    obcaecati illo fugit non quaerat, facere ut ex, necessitatibus quasi corporis pariatur? Placeat
+                    ullam adipisci ad dolores dolore?</p>
+
+                <p class="dotted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem nam vero accusamus
+                    ex voluptatibus
+                    inventore iste error omnis! Explicabo, quos nihil? Error molestiae voluptates hic ea magni obcaecati
+                    delectus, dolores, recusandae laudantium necessitatibus nam similique placeat iste tempora
+                    voluptate! Sunt tenetur excepturi, magnam cupiditate, explicabo perferendis laborum officiis natus
+                    molestiae magni numquam impedit incidunt quisquam at praesentium? Cumque sunt fuga cupiditate at.
+                    Nisi et optio error, ipsa ipsum expedita soluta, doloribus magnam saepe maxime laudantium porro.
+                    Fugiat pariatur velit, ducimus iure eius eligendi ut illo earum, molestiae cum dolor est rerum in
+                    omnis magnam? Maxime laudantium necessitatibus harum id? Alias illum maxime ex eligendi qui, quia,
+                    sed quibusdam a magnam quod commodi incidunt ad mollitia recusandae debitis, eaque animi at eos
+                    necessitatibus explicabo obcaecati cum nisi nemo? Error officiis ad, ea repellat fugit, beatae quos,
+                    quae sequi deleniti vel aperiam at expedita voluptas. Sed illo impedit delectus earum dicta quasi
+                    animi vel porro, excepturi quae. Quis, accusamus. Dignissimos vero dolorum dolores nostrum adipisci
+                    iusto voluptas unde suscipit illo consectetur velit veritatis placeat nobis assumenda vel tempora,
+                    consequatur, a earum quidem. Natus omnis atque ipsam tempore vitae eum, voluptates possimus minima!
+                    Quaerat at minus nesciunt expedita ex, corrupti odio delectus temporibus eos incidunt! Natus
+                    voluptatum repudiandae, fugit et beatae laboriosam?
+                </p>
+
+                <p class="dotted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque perferendis rerum
+                    repudiandae
+                    molestias voluptate. Commodi minus eligendi provident nihil autem ab animi debitis veritatis
+                    distinctio, ipsam in corporis necessitatibus nesciunt enim vel molestias illum quaerat. Debitis
+                    voluptate quia totam nemo aspernatur voluptas incidunt, porro laborum doloremque, quas cumque earum,
+                    voluptatem sapiente minima. Quasi voluptatem commodi ab saepe magni dignissimos blanditiis magnam
+                    vitae laborum similique ex possimus alias, voluptas cum aliquam vel. Quos laboriosam aliquid vero
+                    error non, consectetur qui facilis provident, itaque magnam perspiciatis quae. Aliquam corporis
+                    quis, pariatur error dignissimos debitis suscipit inventore officiis, aliquid velit voluptatum vel
+                    doloremque, incidunt ipsa? Qui iure, eveniet nisi in tempora a sunt necessitatibus recusandae
+                    tempore dolores consequuntur earum provident libero, enim eum. Neque modi id necessitatibus non,
+                    sunt sapiente cupiditate eius amet, sed, perferendis aspernatur eveniet nobis placeat. Aperiam magni
+                    neque sequi non soluta expedita repellat illo, nisi quo facere consequuntur exercitationem qui atque
+                    nulla ipsum beatae alias, ab velit provident laboriosam perferendis voluptates eaque. Neque
+                    repellendus doloribus eveniet. Iure corrupti nemo placeat quas architecto? Id ad culpa dignissimos
+                    asperiores totam qui sequi praesentium atque, possimus odio quae aspernatur unde fugit consectetur
+                    voluptas non enim veniam distinctio impedit, magni ipsa alias rem ratione sunt. Dolores nisi sequi
+                    ullam tempora blanditiis, ea consequuntur culpa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question 7 -->
+    <section class="main-section">
+        <h2 class="section-heading">Question 7: Animated Object // Will only work when it is scrolled for the 1st time or refresh and then scroll back again
+        </h2>
+        <div class="section-content">
+            <div class="animated-object"></div>
+        </div>
+    </section>
+
+    <!-- Question 8 -->
+    <section class="main-section">
+        <h2 class="section-heading">Question 8: Simple Web Page Layout</h2>
+        <div class="section-content">
+            <div class="simple-layout">
+                <header class="header">Simple Web Page Layout</header>
+                <div class="content-wrapper">
+                    <aside class="sidebar">
+                        <ul>
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                        </ul>
+                    </aside>
+                    <main class="main-content">
+                        <h3>Main Content</h3>
+                        <p>This is the main content of the page. The sidebar is fixed to the left, and the content
+                            adjusts
+                            accordingly. The header is fixed at the top, and the footer is at the bottom.
+                        </p>
+                        <p>You can add more content here. The page layout is responsive, with the sidebar remaining
+                            fixed
+                            while you scroll through the content.
+                        </p>
+                        <footer class="footer">© 2025 My Simple Web Page</footer>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
